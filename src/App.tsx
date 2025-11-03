@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import StatsCard from './components/StatsCard';
+import OrderTable from './components/OrderTable';
 
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
           textColor="text-orange-600"
         />
       </div>
+
+      <OrderTable orders={orders} />
 
     </div>
   );
