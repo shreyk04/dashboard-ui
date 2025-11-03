@@ -19,11 +19,7 @@ const Sidebar = () => {
                 </div>
                 <span className="text-xl font-semibold">untlip</span>
             </div>
-            <div className="m-4 bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-6 text-center">
-                <div className="mb-3 text-4xl">👨‍💻</div>
-                <p className="font-semibold">Upgrade</p>
-                <p className="text-sm text-gray-600">your plan →</p>
-            </div>
+
 
             <div className="flex-1 px-4">
                 {menuItems.map((item, idx) => (
@@ -45,6 +41,12 @@ const Sidebar = () => {
             <div className="mx-4 mb-6 flex items-center gap-3 px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <span>🚪</span>
                 <span>Log Out</span>
+            </div>
+
+            <div className="m-4 bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-6 text-center">
+                <div className="mb-3 text-4xl">👨‍💻</div>
+                <p className="font-semibold">Upgrade</p>
+                <p className="text-sm text-gray-600">your plan →</p>
             </div>
         </div>
     );
