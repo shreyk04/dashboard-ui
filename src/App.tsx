@@ -1,5 +1,7 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import StatsCard from './components/StatsCard';
 
 
 function App() {
@@ -16,7 +18,31 @@ function App() {
   return (
     <div className="flex h-screen bg-gray-100">
       <Sidebar />
+      <Header />
 
+      <div className="grid grid-cols-3 gap-6 mb-8">
+        <StatsCard
+          title="New Orders"
+          count={245}
+          percentage={20}
+          bgColor="bg-blue-50"
+          textColor="text-blue-600"
+        />
+        <StatsCard
+          title="Pending Orders"
+          count={123}
+          percentage={11}
+          bgColor="bg-purple-50"
+          textColor="text-purple-600"
+        />
+        <StatsCard
+          title="Delivered Orders"
+          count={150}
+          percentage={18}
+          bgColor="bg-orange-50"
+          textColor="text-orange-600"
+        />
+      </div>
 
     </div>
   );
