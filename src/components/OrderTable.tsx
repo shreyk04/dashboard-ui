@@ -65,19 +65,15 @@ const OrderTable = ({ orders }: any) => {
                                 {order.id}
                             </td>
                             <td className="py-4 px-4 text-gray-600">
-                                <span className="mr-2">📅</span>
                                 {order.date}
                             </td>
                             <td className="py-4 px-4 text-gray-600">
-                                <span className="mr-2">📦</span>
                                 {order.product}
                             </td>
                             <td className="py-4 px-4 text-gray-700">
-                                <span className="mr-2">💵</span>
                                 {order.price} USD
                             </td>
                             <td className="py-4 px-4">
-                                <span className="mr-2 text-gray-400">📊</span>
                                 <span className={`px-3 py-1 rounded-full text-sm ${getStatusColor(order.status)}`}>
                                     {order.status === 'Delivered' && '✓ '}
                                     {order.status === 'Cancelled' && '✕ '}
