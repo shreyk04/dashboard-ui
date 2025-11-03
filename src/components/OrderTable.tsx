@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const OrderTable = ({ orders }: any) => {
     const [activeTab, setActiveTab] = useState('All Orders');

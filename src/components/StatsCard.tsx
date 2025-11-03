@@ -1,4 +1,3 @@
-import React from 'react';
 
 const StatsCard = ({ title, count, percentage, bgColor, textColor }: any) => {
     return (
